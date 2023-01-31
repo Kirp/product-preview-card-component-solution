@@ -1,0 +1,161 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat_medium;
+    src: url(./fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Fraunces_72_soft_bold;
+    src: url(./fonts/Fraunces_72pt_Soft-Bold.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+
+main {
+    display:flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    width: 43ch;
+    height: 77ch;
+    margin: auto;
+    margin-top: 7%;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: Fraunces_72_soft_bold, serif;
+    font-size: 2.25em;
+    width: 13ch;   
+    line-height: 0.95em;
+}
+
+
+p {
+    font-family: Monstserrat, sans-serif;
+    margin-top: .75em;
+    margin-bottom: 1em;
+    color: hsl(228, 12%, 48%);
+}
+
+p:first-of-type {
+    font-size: .85em;
+    text-transform: uppercase;
+    letter-spacing: 1ch; 
+}
+
+a {
+    text-decoration: none;
+}
+
+#main-description {
+    font-family: Montserrat_medium;
+    font-size: .90em;
+    width: 31.5ch;
+    line-height: 1.25em;
+    padding: 1em 0;   
+}
+
+.img-desktop {
+    display: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.img-mobile {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+section {
+    padding: 1em;
+    margin: 0 auto;
+    width:38ch;
+}
+
+#prices {
+    display: flex;
+    padding-bottom: 1em;
+}
+
+
+#prices div:first-of-type {
+    font-family: Fraunces_72_soft_bold, serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 2em;
+}
+
+#prices div:last-of-type {
+    text-decoration-line: line-through;
+    margin-top: .6em;
+    margin-left: 1em;
+    color: hsl(228, 12%, 48%);
+}
+
+#addToCart {
+    background-color: hsl(158, 36%, 37%);
+    width: 90%;
+    padding: 1em;
+    color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+#addToCart img {
+    width: 1em;
+    padding-left: 30%;
+    padding-right: 3%;
+}
+
+#addToCart:hover {
+    background-color: hsl(156, 42%, 18%);
+}
+
+footer {
+    position: fixed;
+    bottom:0;
+    font-size: small;
+}
+
+
+@media  screen and (min-width:700px) {
+    img:first-of-type{
+        display:inline-block;
+    }
+    img:nth-of-type(2) {
+        display: none;
+    }
+
+    section {
+        height: 100%;
+    }
+
+    main {
+        width: 75ch;
+        height: 55ch;
+        flex-direction: row;
+        margin-top: 15%;
+    }
+
+    main h1 {
+        max-width: 10ch;
+    }
+
+    #main-description {
+        width: 25ch;
+        line-height: 1.5em;
+    }
+
+    
+}
+
