@@ -54,7 +54,7 @@ I tried to use px as little as possible when setting positions. Also tried a sma
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Kirp)
+- Frontend Mentor - [@Kirp](https://www.frontendmentor.io/profile/Kirp)
 
 
 
