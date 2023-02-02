@@ -22,51 +22,28 @@ body {
     background-color: hsl(30, 38%, 92%);
 }
 
+#container {
+    width: 100vw;
+    height: 100vh;
+}
 
 main {
     display:flex;
     flex-direction: column;
+    justify-content: center;
     background-color: hsl(0, 0%, 100%);
-    width: 43ch;
-    height: 77ch;
-    margin: auto;
-    margin-top: 7%;
+    width: 90%;
+    min-width: 252px;
+    max-width: 43ch;
     border-radius: 10px;
     box-shadow: 0 0 1;
-}
-
-h1 {
-    font-family: Fraunces_72_soft_bold, serif;
-    font-size: 2.25em;
-    width: 13ch;   
-    line-height: 0.95em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 
-p {
-    font-family: Monstserrat, sans-serif;
-    margin-top: .75em;
-    margin-bottom: 1em;
-    color: hsl(228, 12%, 48%);
-}
-
-p:first-of-type {
-    font-size: .85em;
-    text-transform: uppercase;
-    letter-spacing: 1ch; 
-}
-
-a {
-    text-decoration: none;
-}
-
-#main-description {
-    font-family: Montserrat_medium;
-    font-size: .90em;
-    width: 31.5ch;
-    line-height: 1.25em;
-    padding: 1em 0;   
-}
 
 .img-desktop {
     display: none;
@@ -78,10 +55,46 @@ a {
     border-radius: 10px 10px 0 0;
 }
 
-section {
+.all-text {
+    background-color: inherit;
     padding: 1em;
-    margin: 0 auto;
-    width:38ch;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: Fraunces_72_soft_bold, serif;
+    font-size: 2.25em;
+    line-height: 0.95em;
+}
+
+
+p {
+    font-family: Monstserrat, sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+p:first-of-type {
+    font-size: .85em;
+    text-transform: uppercase;
+    letter-spacing: 1ch; 
+    margin-top: .75em;
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main-description {
+    font-family: Montserrat_medium;
+    font-size: .90em;
+    width: 95%;
+    line-height: 1.75em;
+    padding: 1em 0;   
 }
 
 #prices {
@@ -106,10 +119,9 @@ section {
 #addToCart {
     background-color: hsl(158, 36%, 37%);
     width: 90%;
-    padding: 1em;
+    padding: .5em 0;
     color: white;
     border-radius: 10px;
-    margin: 0 auto;
 }
 
 #addToCart img {
@@ -131,21 +143,24 @@ footer {
 
 @media  screen and (min-width:700px) {
     img:first-of-type{
-        display:inline-block;
+        width: 100%;
+        display:initial;
     }
     img:nth-of-type(2) {
         display: none;
     }
 
-    section {
-        height: 100%;
+    
+    main {
+        /* height: 55ch; */
+        flex-direction: row;
+        /* justify-content: center; */
     }
 
-    main {
-        width: 75ch;
-        height: 55ch;
-        flex-direction: row;
-        margin-top: 15%;
+    
+
+    main p:first-of-type {
+        margin-bottom: 1.5em;
     }
 
     main h1 {
@@ -154,7 +169,11 @@ footer {
 
     #main-description {
         width: 25ch;
-        line-height: 1.5em;
+        line-height: 2em;
+    }
+
+    #prices {
+        margin-bottom: 2em;
     }
 
     

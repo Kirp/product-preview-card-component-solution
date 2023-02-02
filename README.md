@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Kirp/product-preview-card-component-solution)
-- Live Site URL: [Add live site URL here](https://kirp.github.io/product-preview-card-component-solution/)
+- Solution URL: [Github](https://github.com/Kirp/product-preview-card-component-solution)
+- Live Site URL: [Github Pages](https://kirp.github.io/product-preview-card-component-solution/)
 
 ## My process
 
