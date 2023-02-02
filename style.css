@@ -118,7 +118,7 @@ a {
 
 #addToCart {
     background-color: hsl(158, 36%, 37%);
-    width: 90%;
+    /* width: 99%; */
     padding: .5em 0;
     color: white;
     border-radius: 10px;
